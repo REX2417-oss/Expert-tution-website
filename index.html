@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expert Tuition Classes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #d63384;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    nav {
+      background-color: #ff69b4;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    form input, form select, form textarea, form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #e55a9d;
+    }
+    #home, #courses, #dashboard, #contact {
+      background-color: white;
+    }
+    #registration, #payment, #login {
+      background-color: #ffe4ec;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#registration">Register</a></li>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to Expert Tuition Classes</h1>
+    <p>Providing experienced private tutoring for grades 6, 7, and 8.</p>
+  </section>
+
+  <section id="registration">
+    <h2>Registration Form</h2>
+    <form>
+      <label for="studentName">Student's Full Name:</label>
+      <input type="text" id="studentName" required>
+
+      <label for="grade">Grade:</label>
+      <select id="grade" required>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <label for="parentEmail">Parent’s Email ID:</label>
+      <input type="email" id="parentEmail" required>
+
+      <label for="parentPhone">Parent’s Phone Number:</label>
+      <input type="tel" id="parentPhone" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="courses">
+    <h2>Courses and Pricing</h2>
+    <h3>Group Tuition</h3>
+    <ul>
+      <li>Grade 6 – ₹2000/month</li>
+      <li>Grade 7 – ₹2500/month</li>
+      <li>Grade 8 – ₹3000/month</li>
+    </ul>
+    <h3>Private Tutor</h3>
+    <ul>
+      <li>Grade 6 – ₹4500/month</li>
+      <li>Grade 7 – ₹5000/month</li>
+      <li>Grade 8 – ₹5500/month</li>
+    </ul>
+  </section>
+
+  <section id="payment">
+    <h2>Payment Method</h2>
+    <p>We accept UPI, Credit/Debit Card, and Net Banking.</p>
+    <h3>Payment Policy</h3>
+    <p>Fees must be paid between the 1st–5th of every month irrespective of when the student began.</p>
+    <p>Late fee: ₹100 per day after the 5th.</p>
+    <p>Non-payment for 5 consecutive days will result in immediate termination of the student’s admission.</p>
+  </section>
+
+  <section id="dashboard">
+    <h2>Student Dashboard</h2>
+    <p>Access your daily attendance and submit homework here.</p>
+  </section>
+
+  <section id="login">
+    <h2>Login</h2>
+    <form>
+      <label for="studentID">Student ID:</label>
+      <input type="text" id="studentID" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>Email: info@expert-tuition.com</p>
+    <form>
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" required>
+
+      <label for="contactMessage">Message:</label>
+      <textarea id="contactMessage" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
